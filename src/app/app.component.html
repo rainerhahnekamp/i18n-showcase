@@ -1,5 +1,19 @@
 <div class="container">
   <div class="row">
+    <p>
+      This Angular project demonstrates a use case that cannot be implemented
+      with the official i18n module.
+    </p>
+    <p>
+      Ngx-formly is used to generate forms. With it, we can declare the form
+      config within the component and the html is generated on-the-fly.
+    </p>
+    <p>
+      That's why we need access to the translations within the component. Since
+      Angular's i18n doesn't offer that possibility, ngx-translate is used.
+    </p>
+  </div>
+  <div class="row">
     <div class="col-md-4">
       <form [formGroup]="form">
         <formly-form [form]="form" [model]="model" [fields]="fields">
